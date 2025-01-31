@@ -1,0 +1,94 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.4.0",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "users": [
+        {
+          "file": "users/main.go",
+          "hash": "15146315714063415018"
+        },
+        {
+          "file": "users/main_test.go",
+          "hash": "12780176229736183515"
+        },
+        {
+          "file": "users/project.json",
+          "hash": "6453964671673681463"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".idea/.gitignore",
+        "hash": "10286036308014790964"
+      },
+      {
+        "file": ".idea/modules.xml",
+        "hash": "6464289180104880176"
+      },
+      {
+        "file": ".idea/monorepo.iml",
+        "hash": "6535610596701689443"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "14721619479974801327"
+      },
+      {
+        "file": "go.mod",
+        "hash": "12746777999861638166"
+      },
+      {
+        "file": "main.go",
+        "hash": "6354206356749853366"
+      },
+      {
+        "file": "monorepo-go/.gitignore",
+        "hash": "12474917728722778441"
+      },
+      {
+        "file": "monorepo-go/.vscode/extensions.json",
+        "hash": "5673190821613406900"
+      },
+      {
+        "file": "monorepo-go/README.md",
+        "hash": "15162442154747772580"
+      },
+      {
+        "file": "monorepo-go/nx.json",
+        "hash": "11149306507315027744"
+      },
+      {
+        "file": "monorepo-go/package-lock.json",
+        "hash": "10582043210656824610"
+      },
+      {
+        "file": "monorepo-go/package.json",
+        "hash": "5788062147469077326"
+      },
+      {
+        "file": "monorepo-go/packages/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "monorepo-go/tsconfig.base.json",
+        "hash": "10000561406389782255"
+      },
+      {
+        "file": "monorepo-go/tsconfig.json",
+        "hash": "1379983966652230747"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "14238475465557900266"
+      },
+      {
+        "file": "package.json",
+        "hash": "17064265867368449445"
+      }
+    ]
+  }
+}

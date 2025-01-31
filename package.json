@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@nx-go/nx-go": "^3.3.1"
+  }
+}

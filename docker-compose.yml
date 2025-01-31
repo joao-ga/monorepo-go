@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  users:
+    build:
+      context: ./apps/users
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+
+  scheduling:
+    build:
+      context: ./apps/scheduling
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:

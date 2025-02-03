@@ -1,18 +1,24 @@
 package main
 
 import (
-	"github.com/go-chi/chi/v5"
-	"github.com/go-chi/chi/v5/middleware"
+	"log"
 	"net/http"
+	"users/database"
+	"users/routes"
 )
 
 func main() {
-	r := chi.NewRouter()
-	r.Use(middleware.Logger)
+	uri := "mongodb+srv://jbiazonferreira:qwerty123456@cluster0.82ixr.mongodb.net/"
 
-	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Hello World"))
-	})
+	_, err := database.InitDB(uri)
+	if err != nil {
+		log.Fatalf("Failed to connect to database: %v", err)
+	}
 
-	http.ListenAndServe(":8080", r)
+	router := routes.UserRoutes()
+
+	log.Println("Starting server on :3000")
+	if err := http.ListenAndServe(":3000", router); err != nil {
+		log.Fatalf("Failed to start server: %v", err)
+	}
 }
